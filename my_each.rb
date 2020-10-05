@@ -1,11 +1,8 @@
-# def my_each # put argument(s) here
-#   # code here
-# end
 
+collection = [1,2,3,4]
 
-
-
-collection = [1, 2, 3, 4]
-my_each(collection) do |i|
-  puts i
+def my_each(collection = [1,2,3,4])
+  collection.map { |i| puts "This is number #{i}"  }
 end
+  
+  
